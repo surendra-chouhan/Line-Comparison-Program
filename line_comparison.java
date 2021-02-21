@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 
 public class line_comparison {
 
@@ -40,7 +39,9 @@ public class line_comparison {
 
 		if(first_line_length == second_line_length)
 			System.out.println("Both lines are equal");
+		else if(first_line_length > second_line_length)
+			System.out.println("First Line is greater than Second Line");
 		else
-			System.out.println("Both lines are not equal");
+			System.out.println("Second Line is greater than First Line");
 	}
 }
