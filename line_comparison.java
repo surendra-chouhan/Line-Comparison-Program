@@ -37,11 +37,10 @@ public class line_comparison {
 		double second_line_length = lc.length_of_a_line();
 		System.out.println("Length of Second line is : " + second_line_length);
 
-		if(first_line_length == second_line_length)
-			System.out.println("Both lines are equal");
-		else if(first_line_length > second_line_length)
-			System.out.println("First Line is greater than Second Line");
-		else
-			System.out.println("Second Line is greater than First Line");
+		String first=Double.toString(first_line_length);
+		String second=Double.toString(second_line_length);
+
+		System.out.println("Are both lines equal? ");
+		System.out.println(first.equals(second));
 	}
 }
